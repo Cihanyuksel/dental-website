@@ -1,0 +1,42 @@
+/** GOOGLE FONT **/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+
+// FONT
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Source Sans Pro', sans-serif;
+$third-font: 'Fjord One', serif;
+
+// COLORS
+$primary-color: #1c87c9;
+$secondary-color: #0bb3a8;
+$third-color: #707073;
+
+// OTHERS
+$letterSpacing: .1rem;
+$general-transition: all .4s;
+
+@mixin flex-display ($display, $align-items, $justtify-content, $flex-direction) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justtify-content;
+    flex-direction: $flex-direction;
+}
+
+// COMPONENT
+.main-btn {
+    border: 2px solid $primary-color;
+    border-radius: 2rem !important;
+    padding: .8rem 2.5rem;
+    color: $primary-color;
+    background-color: #fff;
+    margin: 0;
+    font-size: 1.5rem;
+
+    &:hover{
+        background-color: $primary-color;
+        color: #fff;
+        transition: $general-transition;
+    }
+}

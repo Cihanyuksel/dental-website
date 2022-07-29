@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lorem Ipsum: Lorem ipsum dolor sit amet consectetur adipisicing">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="description" content="Web Project">
+  <link rel="icon" href="img/logo/favicon.png">
+  <title>Dental Web Site</title>
+
+  <!-- Bootstrap CSS CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!-- QWL CAROUSEL CSS -->
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+
+  <!-- SWİPER CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="/css/fontawesome-all.css">
+  
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!--Custom Responsive CSS-->
+  <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+  <div class="bottom-menu">
+    <div class="appointment">ONLINE RANDEVU</div>
+    <div class="send-message">MESAJ GONDER</div>
+    <div class="xray-send">RONTGEN GONDER</div>
+    <div class="wp">WP</div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="nav-bar">
+    <div class="close-menu2" id="close2">
+      <label for="check-1">
+        <i class="fa-solid fa-xmark-large">X</i>
+      </label>
+    </div>
+    <div class="nav-menu">
+      <div class="nav-link" id="slideLeft">
+        <li><a class="li" href="">Ana Sayfa</a></li>
+        <li><a class="li" href="">Kurumsal</a></li>
+        <li><a class="li" href="">Hekimlerimiz</a></li>
+        <li><a class="li" href="#treatments">Tedaviler</a></li>
+        <li><a class="li" href="">İletişim</a></li>
+      </div>
+      <div class="nav-address">
+        <i class="fa-solid fa-location-dot"></i>
+        <span class="address-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      </div>
+      <div class="nav-phone">
+        <i class="fa-solid fa-phone"></i>
+        <span class="header-side-phone">+11 222 333 44 55</span>
+      </div>
+      <div class="nav-social-menu">
+        <a href=""><i class="fa-brands fa-facebook"></i></a> 
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="overlay">
+      <div class="overlay-img-content">
+        <img class="overlay-slogan" src="img/slogan.webp" alt="">
+        <p class="overlay-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia ipsam aspernatur distinctio id ab veniam ipsa itaque blanditiis ex, voluptates, delectus quos necessitatibus laudantium dolor nesciunt consectetur corrupti quidem quo?</p>
+      </div>
+      <img class="overlay-img" src="/img/nav-img.jpg" alt="">
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+  <!--SİDEBAR-->
+  <div class="sidebar">
+
+    <div class="open-menu" id="open">
+      <label for="check-1">
+          <i class="fa-solid fa-bars" id="hamburger"></i>
+      </label>
+      <input type="checkbox" name="open" id="check-1" onclick="check()">
+    </div>
+
+    <div class="close-menu" id="close">
+      <label for="check-1">
+        <i class="fa-solid fa-xmark-large">X</i>
+      </label>
+    </div>
+
+    <div class="link">
+      <i class="fa-solid fa-earth-africa" id="open"></i>
+      <div class="link-top">
+        <a href="">TR</a>
+        <span class="lang">|</span>
+        <a href="">EN</a>
+        <span class="lang">|</span>
+        <a href="">DE</a>
+      </div>
+    </div>
+
+    <div class="link">
+      <a class="link-item" href="#">
+        <i class="fa-solid fa-calendar"></i>
+        <p class="link-title">Online Randevu</p>
+      </a>
+    </div>
+
+    <div class="link">
+      <a class="link-item" id="link-item"  href="#">
+        <i class="fa-solid fa-message"></i>
+        <p class="link-title" >Mesaj Gonder</p>
+      </a>
+    </div>
+
+    <div class="link">
+      <a class="link-item" href="#">
+        <i class="fa-solid fa-teeth-open"></i>
+        <p class="link-title">Röntgen Gönder</p>
+      </a>
+    </div>
+
+    <div class="link">
+      <a class="link-item" href="//api.whatsapp.com/send?phone=91MOBILE_NUMBER&text=Lorem Ipsum" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        <p class="link-title">Whatsapp</p>
+      </a>
+    </div>
+    
+  </div>
+  <!-- END SİDEBAR-->
+
+  <!-- HEADER -->
+  <div class="container">
+    
+    <!-- SEARCH AREA -->
+    <form class="search" id="searchInput">
+      <input type="search" name="search" id="inputSearch" class="search-group-input" placeholder="Size Nasıl Yardımcı Olabiliriz?" required>
+      <div class="search-btn">
+        <button class="search-btn-search" id="search-btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="search-btn-close" id="search-btn-close" type="button" ><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </form>
+    <!-- END SEARCH AREA -->
+
+    <div class="header" id="header">
+
+      <a href="" class="header-logo">
+        <img class="header-logo-img" src="/img/logo/dentalLogo.png" alt="logo">
+        <h1 class="header-logo-title">Lorem Ipsum</h1>
+      </a>
+
+      <div class="header-side">
+
+        <a class="header-side-link" >
+          <i class="fa-solid fa-phone"></i>
+          <span class="header-side-phone">+11 222 333 44 55</span>
+        </a>
+
+        <span>|</span>
+
+        <a class="header-side-link" id="search" type="button" href="#">
+          <i class="fa-solid fa-magnifying-glass icon"></i>
+          <span class="header-side-title">arama yap</span>
+        </a>
+
+        <div class="open-menu2" id="open2">
+          <label for="check-1">
+              <i class="fa-solid fa-bars" id="hamburger"></i>
+          </label>
+          <input type="checkbox" name="open" id="check-1" onclick="check()">
+        </div>
+      </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- BOOTSTRAP CAROUSEL -->
+
+      <div id="slider" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="img/main-slider/slide-1.jpg"
+              class="d-block w-100" alt="...">  
+            <div class="carousel-caption d-none d-md-block">
+              <div class="slider-info">
+                <h2 class="slider-info-title">Lorem Ipsum I</h2>
+                <p class="slider-info-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis? Omnis sed harum suscipit quos libero natus.</p>
+                <button class="main-btn">Detaylı İnceleyin</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/main-slider/slide-2.jpg"
+              class="d-block w-100" alt="img">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="slider-info">
+                <h2 class="slider-info-title">Lorem Ipsum II</h2>
+                <p class="slider-info-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis? Omnis sed harum suscipit quos libero natus.</p>
+                <button class="main-btn">Detaylı İnceleyin</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/main-slider/slide-3.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="slider-info">
+                <h2 class="slider-info-title">Lorem Ipsum III</h2>
+                <p class="slider-info-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis? Omnis sed harum suscipit quos libero natus.</p>
+                <button class="main-btn">Detaylı İnceleyin</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/main-slider/slide-4.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="slider-info">
+                <h2 class="slider-info-title">Lorem Ipsum IV</h2>
+                <p class="slider-info-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis? Omnis sed harum suscipit quos libero natus.</p>
+                <button class="main-btn">Detaylı İnceleyin</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/main-slider/slide-5.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="slider-info">
+                <h2 class="slider-info-title">Lorem Ipsum V</h2>
+                <p class="slider-info-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis? Omnis sed harum suscipit quos libero natus.</p>
+                <button class="main-btn">Detaylı İnceleyin</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">Lorem Ipsum I<i class="fa-solid fa-chevron-right"></i></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1"  aria-label="Slide 2">Lorem Ipsum II <i class="fa-solid fa-chevron-right"></i></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2"  aria-label="Slide 3">Lorem Ipsum III<i class="fa-solid fa-chevron-right"></i></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="3"  aria-label="Slide 4">Lorem Ipsum IV<i class="fa-solid fa-chevron-right"></i></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="4"  aria-label="Slide 4">Lorem Ipsum V<i class="fa-solid fa-chevron-right"></i></button>
+          </div> 
+        </div>
+      </div>
+
+      <!-- END BOOTSRAP CAROUSEL -->
+    </div>
+
+  <!-- TREATMENT SECTION -->
+  <div class="container">
+    <section class="treat slideLeft" id="treatments">
+
+      <div class="treat-container slideLeft">
+        <h2 class="treat-container-title">Tedaviler</h2>
+        <button type="button" class="treat-btn" id="contact-open">
+          Tedavilerimiz hakkında detaylı bilgiye bu bölümden ulaşabilir, birim ile ilgili hizmet veren hekimimize sorularınızı sorabilirsiniz.
+          <br>
+          Tedavilerimiz hakkında merak ettiğiniz sorularınız için <span>mesaj gönderebilirsiniz.</span>
+        </button>
+        <button class="main-btn btn-1">Tümünü Listele</button>
+      </div>
+
+      <!-- OWL CAROUSEL -->
+
+      <div class="main-slider owl-carousel owl-theme">
+
+          <a href="" class="singles-slide">
+            <div class="single-slide">
+              <div class="circle"></div>
+              <img src="img/owl-carousel-img/slide-1.jpg" alt="lorem I" >
+              <h1 class="single-slide-title">Lorem I</h1>
+            </div>
+          </a>
+
+          <a href="" class="singles-slide">
+            <div class="single-slide">
+              <div class="circle"></div>
+              <img src="img/owl-carousel-img/slide-2.jpg" alt="lorem II">
+              <h1 class="single-slide-title">Lorem II</h1>
+            </div>
+          </a>
+
+          <a href="" class="singles-slide">
+            <div class="single-slide">
+              <div class="circle"></div>
+              <img src="img/owl-carousel-img/slide-3.jpg" alt="lorem III">
+              <h1 class="single-slide-title">Lorem III</h1>
+            </div>
+          </a>
+
+          <a href="" class="singles-slide">
+            <div class="single-slide">
+              <div class="circle"></div>
+              <img src="img/owl-carousel-img/slide-4.jpg" alt="lorem VI">
+              <h1 class="single-slide-title">Lorem VI</h1>
+            </div>
+          </a>
+
+          <a href="" class="singles-slide">
+            <div class="single-slide">
+              <img src="img/owl-carousel-img/slide-5.jpg" alt="lorem V">
+              <h1 class="single-slide-title">Lorem V</h1>
+            </div>
+          </a>
+
+          <a href="" class="singles-slide">
+            <div class="single-slide">
+              <img src="img/owl-carousel-img/slide-6.jpg" alt="lorem VI">
+              <h1 class="single-slide-title">Lorem VI</h1>
+            </div>
+          </a>
+
+      </div>
+       <!-- END OWL CAROUSEL -->
+    </section>
+
+    <!-- POPUP CONTACT FORM -->
+    <div class="popup-container" id="popup-container">
+      <div class="popup">
+        <button id="contact-close">&times;</button>
+        <h2 class="form-title">İletişim Formu</h2>
+        <hr>
+        
+        <form action="">
+
+          <div class="form-row">
+            <input type="text" id="name" name="name" required>
+            <label for="name">Adınız</label>
+          </div>
+
+          <div class="form-row">
+            <input type="text" id="surname" name="surname" required>
+            <label for="surname">Soyadınız</label>
+          </div>
+
+          <div class="form-row">
+            <input type="email" id="email" name="email" required>
+            <label for="email">E-Mail Adresiniz</label>
+          </div>
+
+          <div class="form-row">
+            <input type="number" id="phone" name="phone">
+            <label for="phone">Telefon Numaranız</label>
+          </div>
+
+          <div class="form-row">
+            <textarea name="message" id="message" cols="10" rows="3" placeholder="Mesajınız..." required></textarea>
+          </div>
+
+          <div class="form-row-last">
+            <input type="checkbox" name="" id="">
+            <a href=""> Kişisel Verilerin korunması Hakkında Bilgilendirmeyi okudum kabul ediyorum.</a>
+            <button type="submit" class="main-btn">GÖNDER</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <!-- END POPUP CONTACT FORM -->
+
+  </div>
+  <!-- END TREATMENT SECTION -->
+ 
+  <!-- PRİVİLİGES -->
+  <div class="container">
+    <div class="privileges slideLeft" id="accordion">
+
+      <div class="privileges-img">
+        <img class="privileges-img-1" src="img/saglik-turizmi_tr.webp" alt="Saglik Turizmi">
+        <button class="privileges-img-btn main-btn">Detaylı İnceleyin</button>
+      </div>
+
+      <div class="privileges-content">
+        <h2 class="privileges-content-title">Lorem Ipsum Ayrıcalıkları</h2>
+
+        <div class="privileges-content-1">
+          
+          <button class="privileges-content-1-btn" type="button">Lorem ipsum dolor sit amet.</button>
+          <p class="privileges-content-1-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Repudiandae, dicta asperiores sit veritatis maxime ad necessitatibus dolor iusto laudantium suscipit? Quia vel repudiandae consequatur... <a href="#"><strong>Daha Fazla Oku</strong></a>
+           </p>
+        </div>
+
+        <div class="privileges-content-1">
+          <button  class="privileges-content-1-btn" type="button">Lorem ipsum dolor sit amet.</button>
+          <p class="privileges-content-1-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro velit sint ea, aut, odio eligendi, 
+            sunt similique dolores quaerat cupiditate ad quidem... <a href="#"><strong>Daha Fazla Oku</strong></a></p>
+        </div>
+
+        <div class="privileges-content-1">
+          <button class="privileges-content-1-btn" type="button">Lorem ipsum dolor sit amet.</button>
+          <p class="privileges-content-1-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, 
+            distinctio aliquam? Ab possimus quas quo eos explicabo at consequuntur, vel perspiciatis eius molestias nostrum... <a href="#"><strong>Daha Fazla Oku</strong></a>
+           </p>
+        </div>
+        <button class="health-btn main-btn">Sağlık Turizmi</button>
+      </div>
+    </div>
+  </div>
+  <!-- END PRİVİLİGES -->
+
+  <!-- ARTİCLE -->
+<article>
+  <div class="swiper mySwiper slideBottom">
+    <h1 class="swiper-title">ARTİCLE</h1>
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/swiper-slider/slide-1.jpg" alt="Diş Sağlığı">
+          <div class="swiper-slide-content">
+            <h2>Lorem Ipsum</h2>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint facilis tempora ratione perferendis tenetur, voluptatibus voluptatem minima culpa laudantium fugiat...</p>
+            <button class="">Tamamını Oku</button>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="img/swiper-slider/slide-2.jpg" alt="Diş Sağlığı">
+          <div class="swiper-slide-content">
+            <h2>Lorem Ipsum</h2>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint facilis tempora ratione perferendis tenetur, voluptatibus voluptatem minima culpa laudantium fugiat...</p>
+            <button class="">Tamamını Oku</button>
+       </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="img/swiper-slider/slide-3.jpg" alt="Diş Sağlığı">
+        <div class="swiper-slide-content">
+          <h2>Lorem Ipsum</h2>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint facilis tempora ratione perferendis tenetur, voluptatibus voluptatem minima culpa laudantium fugiat...</p>
+          <button class="">Tamamını Oku</button>
+        </div>
+      </div>
+      <div class="swiper-slide"> 
+        <img src="img/swiper-slider/slide-4.jpg" alt="Diş Sağlığı">
+        <div class="swiper-slide-content">
+          <h2>Lorem Ipsum</h2>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint facilis tempora ratione perferendis tenetur, voluptatibus voluptatem minima culpa laudantium fugiat...</p>
+          <button class="">Tamamını Oku</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <img src="img/swiper-slider/slide-5.jpg" alt="Diş Sağlığı">
+          <div class="swiper-slide-content">
+            <h2>Lorem Ipsum</h2>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint facilis tempora ratione perferendis tenetur, voluptatibus voluptatem minima culpa laudantium fugiat...</p>
+            <button class="">Tamamını Oku</button>
+          </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>  
+</article>
+
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-left">
+
+      <div class="footer-left-img">
+        <img src="./img/logo/dentalLogo.png" style="width: 12rem; height: 12rem;" alt="">
+        <h1 class="footer-left-img-title">Lorem Ipsum</h1>
+      </div>
+
+      <div class="footer-left-content">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolore, quod ipsam ex mollitia aliquam?</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, sunt.</div>
+      </div>
+
+      <img src="/img/slogan-footer.webp" alt="footer-image">
+
+      <div class="footer-left-content-2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, id autem vero, est quas accusamus ipsam neque quod illum doloribus voluptatum quos ratione dolor 
+        excepturi incidunt nemo? Eum et neque accusantium iure totam repellat delectus repudiandae obcaecati reprehenderit expedita
+      </div>
+
+      <div class="copyright"><strong> Copyright &#169; Lorem Ipsum 2022</strong> Cihan Yuksel</div>
+    </div>
+
+    <div class="footer-right">
+
+      <div class="footer-phone">
+        <div class="footer-phone-title">Randevu Hattı :</div>
+        <div class="footer-phone-content">+11 222 333 44 55</div>
+      </div>
+
+      <div class="footer-address">
+        <div class="footer-address-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <a href="#">Yol Tarifi Alın</a>
+      </div>
+
+      <div>
+        <a href=""><i class="fa-brands fa-facebook" style="font-size: 4rem; margin-right: 2rem; color: rgb(168, 166, 166);"></i></a> 
+        <a href=""><i class="fa-brands fa-instagram" style="font-size: 4rem; margin-right: 2rem; color: rgb(168, 166, 166);"></i></a>
+        <a href=""><i class="fa-brands fa-twitter" style="font-size: 4rem; margin-right: 2rem; color: rgb(168, 166, 166)"></i></a>
+        <a href=""><i class="fa-brands fa-youtube" style="font-size: 4rem; margin-right: 2rem; color: rgb(168, 166, 166)"></i></a>
+      </div>
+
+      <div class="footer-link">
+
+        <div class="footer-link-content">
+          <h3 class="footer-link-content-title">Kurumsal</h3>
+          <a href="#">Hakkımızda</a>
+          <a href="#">İnsan Kaynakları</a>
+          <a href="#">Gizlilik Politikası</a>
+          <a href="#">KVKK Politikası</a>
+          <a href="#">Aydınlatma Metni</a>
+          <a href="#">Çerez Politikası</a>
+        </div>
+
+        <div class="footer-link-content">
+          <h3 class="footer-link-content-title">Tedaviler</h3>
+          <a href="#">Diş Beyazlatma</a>
+          <a href="#">Estetik Diş Hekimliği</a>
+          <a href="#">Gizlilik Politikası</a>
+          <a href="#">İmplant</a>
+          <a href="#">Ortodonti</a>
+          <a href="#">Telsiz Ortodonti</a>
+          <a href="#">Tümünü Listele</a>
+        </div>
+
+        <div class="footer-link-content">
+          <h3 class="footer-link-content-title">Online Hizmetler</h3>
+          <a href="#">Online Randevu</a>
+          <a href="#">Doktorunuza Sorun</a>
+          <a href="#">Soru Gönder</a>
+          <a href="#">Bize Ulaşın</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer-bg"></div> 
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/baf816149d.js" crossorigin="anonymous"></script>
+    
+    <!--SCROLL REVEAL JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- JQUERY -->
+    <script src="js/jquery-3.6.0.slim.js"></script>
+    
+    <!-- SWİPER -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- QWL CAROUSEL -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/animation.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
